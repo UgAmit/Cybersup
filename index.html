@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script defer src="firebase.js"></script>
+</head>
+<body>
+<header>
+    <h1>CareerHub Clone</h1>
+    <button id="loginBtn">Login with Google</button>
+    <button id="logoutBtn" style="display:none;">Logout</button>
+</header>
+<section class="courses">
+    <h2>Our Courses</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+    </div>
+</section>
+<section class="notepad">
+    <h2>Take Notes</h2>
+    <textarea id="noteArea" placeholder="Write your notes here..."></textarea>
+    <button onclick="saveNote()">Save</button>
+</section>
+<script src="script.js"></script>
+<script src="notes.js"></script>
+</body>
+</html>
